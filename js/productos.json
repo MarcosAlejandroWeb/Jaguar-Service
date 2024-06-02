@@ -1,0 +1,82 @@
+[
+    {
+        "id": "carnicos-01",
+        "titulo": "carne",
+        "imagen": "./img/carnicos/carne.png",
+        "categoria": {
+            "nombre": "Carnicos",
+            "id": "carnicos"
+        },
+        "precio": 5
+    },
+    {
+        "id": "carnicos-02",
+        "titulo": "Pollo",
+        "imagen": "./img/carnicos/pollo.png",
+        "categoria": {
+            "nombre": "Carnicos",
+            "id": "carnicos"
+        },
+        "precio": 10
+    },
+    {
+        "id": "granos-01",
+        "titulo": "arroz",
+        "imagen": "./img/granos/arroz.png",
+        "categoria": {
+            "nombre": "Granos",
+            "id": "granos"
+        },
+        "precio": 10
+    },
+    {
+        "id": "granos-02",
+        "titulo": "Cafe",
+        "imagen": "./img/granos/cafe.png",
+        "categoria": {
+            "nombre": "Granos",
+            "id": "granos"
+        },
+        "precio": 15
+    },
+    {
+        "id": "granos-03",
+        "titulo": "Frijol negro",
+        "imagen": "./img/granos/frijol_negro.png",
+        "categoria": {
+            "nombre": "Granos",
+            "id": "granos"
+        },
+        "precio": 10
+    },
+    {
+        "id": "variados-01",
+        "titulo": "Aceite",
+        "imagen": "./img/variados/aceite.png",
+        "categoria": {
+            "nombre": "Variados",
+            "id": "variados"
+        },
+        "precio": 3
+    },
+    {
+        "id": "variados-02",
+        "titulo": "Huevo",
+        "imagen": "./img/variados/huevo.png",
+        "categoria": {
+            "nombre": "Variados",
+            "id": "variados"
+        },
+        "precio": 10
+    },
+    {
+        "id": "variados-03",
+        "titulo": "Mayonesa",
+        "imagen": "./img/variados/mayonesa.png",
+        "categoria": {
+            "nombre": "Variados",
+            "id": "variados"
+        },
+        "precio": 5
+    }
+]
