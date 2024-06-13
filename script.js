@@ -208,3 +208,31 @@ function hacerVisibleCarrito(){
     var items = document.getElementsByClassName('contenedor-items')[0];
     items.style.width = '60%';
 }
+
+
+// Obtener el botón y el input
+const boton = document.getElementById('miBoton');
+const input = document.getElementById('miInput');
+const texto = 'Este es el texto que quiero copiar';
+
+// Agregar evento click al botón
+boton.addEventListener('click', () => {
+  // Copiar el valor del input y el texto al portapapeles
+  const textoCopiado = input.value + ' ' + texto;
+  copyTextToClipboard(textoCopiado);
+
+  // Crear un nuevo documento y escribir el texto copiado en él
+  const nuevoDocumento = document.open("text/html", "replace");
+  nuevoDocumento.write(textoCopiado);
+  nuevoDocumento.close();
+});
+
+// Función para copiar texto al portapapeles
+function copyTextToClipboard(text) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textArea);
+}
