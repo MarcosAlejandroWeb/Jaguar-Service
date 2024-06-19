@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans';
+    }
+    .encabezado{
+        margin-top: 40px;
+      text-align: center;
+    }
+    .encabezado2{
+        margin-top: 10px;
+      text-align: center;
+    }
+    .contenido{
+        margin-top: 25px;
+        text-align: center;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <h1 class="encabezado">Gracias por su compra!</h1>
+  <h4 class="encabezado2">Su orden a sido copiada al portapapeles de su dispositivo, puede enviarsela a nuestros agentes!</h4>
+  <div id="texto-copiado" class="contenido"></div>
+
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const texto = urlParams.get('texto');
+    document.getElementById('texto-copiado').innerText = texto;
+  </script>
+
+</body>
+</html>
